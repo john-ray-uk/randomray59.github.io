@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Classifier - John Ray</title>
+  <link rel="stylesheet" href="/stylesheet.css">
+  <link rel="icon" href="/images/general-assets/Icon2.png" type="png">
+</head>
+<body>
+  <div class="navbar">
+      <div class="navbar-text">
+	        Image Classifier
+      </div>
+      <nav>
+          <a href="/">Home</a>
+	  <div class="nav-item has-submenu">
+	  <a href="/projects/">Projects</a>
+          <ul class="submenu">
+            <li><a href="https://luastro.space">LUAstro website</a></li>
+            <li><a href="https://www.lancaster.ac.uk/physics/business/case-studies/">LU Physics case studies</a></li>
+	    <li><a href="/projects/MatCalc/">C++ Matrix Calculator</a></li>
+          </ul>
+          </div>
+          <a href="/astrophotography/">Astrophotography</a>
+          <a href="/naturephotography/">Nature Photography</a>
+          <a href="/hikingphotography/">Hiking Photography</a>
+	<div class="nav-item has-submenu">
+	  <a href="/travelphotography/">Travel Photography</a>
+	  <ul class="submenu">
+            <li><a href="/lisbon-trip/">Lisbon Trip</a></li>
+            <li><a href="/liverpool-trip/">Liverpool Trip</a></li>
+            <li><a href="/anglesey-trip/">Anglesey Trip</a></li>
+            <li><a href="/brussels-trip/">Brussels Trip</a></li>
+            <li><a href="/york-trip/">York Trip</a></li>
+            <li><a href="/farne-islands-day-one/">Farne Islands Trip</a></li>
+          </ul>
+	</div>
+          <a href="https://clients.naturewebsites.com/john">All Photos</a>
+	  <a href="/aboutme/">About Me</a>
+      </nav>
+  </div>
+  <div class="container">
+      <h1>About the program</h1>
+      <p><b>Image Classifer</b> is the first machine-learning program I've made, using Python's PyTorch library to train over the 10,000 images in the CIFAR-10 dataset, and creating a convolutional neural network that can identify
+        sample images into one of 10 classes (all pictures are either of a plane, a car, a bird, a cat, a deer, a dog, a frog, a horse, a ship, or of a truck).
+        The program loads the CIFAR-10 image dataset using PyTorch's Torchvision sub-library, using its small 32x32 pixel RGB images to test and train off.</p>
+  </div>
+	
+ <div class="container">
+	 <img src="/images/general-assets/Image Classifier GUI.PNG" alt="What the program looks like upon loading" width="800" height="408">
+	 <p>Image Classifier's GUI, allowing the user to change the network's training settings, see the program's progress in real time, and view any testing / training images.</p>
+ </div>
+	
+  <div class="container">
+    <h1>Instructions for use</h1>
+	  <p>The source code for the program can be copied from its GitHub repository <a>HERE</a>, and includes 3 main files: the program's main .py file called Image-Classifier.py, 
+    the program's icon image called app.ico (this <b>MUST</b> be copied alongside the .py file for the program to run), and a pre-trained .pth neural network model called classifier_net.pth 
+    (allowing users to instantly test a pre-trained model, if they so desire). The program requires <b>Python version 3.10</b> to run, with the PyTorch, Torchvision, Numpy (<b>MUST</b> be pre-version 2), and Matplotlib 
+      libraries to run (alongside the default Python libraries of OS and Tkinter). Due to the size of the PyTorch and Torchvision libraries, I considered turning the program into a .exe application to be unwise, but may 
+    still do this at a later stage.</p>
+  </div>
+
+  <footer>
+      <div class="footer-content">
+          <p>&copy; 2025 John Ray. All Rights Reserved.</p>
+          <p>Contact me at: <a href="mailto:me@johnray.co.uk">me@johnray.co.uk</a></p>
+          <div class="social-links">
+          <p>Or follow my Instagram at: <a href="https://instagram.com/john.59.ray" target="_blank">john.59.ray</a></p>
+          </div>
+      </div>
+  </footer>
+
+<!-- Webpage scripts -->
+  <script src="/scripts/background.js"></script>
+<script src="https://counterapi.com/c.js?ns=johnray.co.uk" async ></script>
+<!-- Adds a page-specific counter -->
+<div class="counterapi" style="min-height:0px" key="Newtonian-Potential-Simulator" invisible="true"></div>
+
+</body>
+</html>

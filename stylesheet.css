@@ -536,10 +536,11 @@ body::before {
 
 /* Footer styling */
 footer {
-  background-color: #333;
+  background-color: rgba(39, 131, 65, 0.5);
   color: white;
   text-align: center;
-  padding: 20px;
+  border: 10px rgba(199, 160, 28, 0.75) solid;
+  padding: 10px;
   margin-top: 40px;
 }
 .footer-content {
@@ -547,16 +548,13 @@ footer {
   margin: 0 auto;
 }
 .footer-content a {
-  color: #bbb;
+  color: white;
   text-decoration: none;
   margin: 0 10px;
 }
 .footer-content a:hover {
-  color: white;
+  color: #bbb;
 }
 .social-links {
   margin-top: 10px;
 }
-
-
-

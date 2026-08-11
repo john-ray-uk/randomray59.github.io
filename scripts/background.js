@@ -1,4 +1,4 @@
-    // As the user scrolls,the background opacity is updated (0 at scrollY = 0 to 1 at scrollY = 1500)
+    // As the user scrolls, the background opacity is updated (0 at scrollY = 0 to 1 at scrollY = 1500)
     // This doesn't seem to work on older browsers. Presumably the HTML tags I use here are new or something.
     window.addEventListener('scroll', () => {
       let scrollY = window.scrollY;

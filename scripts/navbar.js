@@ -16,5 +16,5 @@
       '/images/general-assets/NavBarBackground14.jpg'
     ];
     const choice = images[Math.floor(Math.random() * images.length)];
-    document.body.style.setProperty('--navbar-bg', `url(${choice})`);
+    document.navbar.style.setProperty('--navbar-bg', `url(${choice})`);
   })();

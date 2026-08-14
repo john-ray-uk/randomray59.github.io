@@ -16,6 +16,11 @@ body {
   /* --bg-image is set in JS */
   --navbar-bg: url('/images/general-assets/NavBarBackground.jpg');
   --navbar-opacity: 0.5;
+  --navbar-main-box: 51, 51, 51;
+  --navbar-main-default: 87, 87, 87;
+  --navbar-main-hover: 87, 87, 87;
+  --navbar-sub-default: 51, 51, 51;
+  --navbar-sub-hover: 255, 255, 255;
   --NavBarmovement: 50%;
 }
 
@@ -38,7 +43,6 @@ body::before {
 }
 
 /* Navbar styling */
-/* Navbar styling */
 .navbar {
   --navbar-bg: url('/images/general-assets/NavBarBackground.jpg');
   background: var(--navbar-bg) center/100% auto no-repeat;
@@ -54,7 +58,7 @@ body::before {
   top: var(--NavBarmovement, 50%);
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(51, 51, 51, 0.5);
+  background-color: rgba(var(--navbar-main-box), 0.5);
   padding: 50px;
   max-width: 600px;
   font-size: 50px;
@@ -82,7 +86,7 @@ body::before {
   padding: 10px 15px;
   color: white;
   text-decoration: none;
-  background-color: rgba(87, 87, 87, var(--navbar-opacity, 0.5));
+  background-color: rgba(var(--navbar-main-default), var(--navbar-opacity, 0.5));
   transition: background-color 0.25s ease;
   position: relative;
   z-index: 2;
@@ -90,7 +94,7 @@ body::before {
 
 /* Hover effect for links */
 .navbar nav a:hover {
-  background-color: rgba(87, 87, 87, 1);
+  background-color: rgba(var(--navbar-main-hover), 1);
 }
 
 /* Underline effect */
@@ -121,7 +125,7 @@ body::before {
   top: 100%;       /* Below the link */
   left: 50%;       /* Start centered */
   transform: translateX(-50%);  /* Shift back half width to center */
-  background: rgba(51, 51, 51, 0.9);
+  background: rgba(var(--navbar-sub-default), 0.9);
   padding: 0.5rem 0;
   list-style: none;
   margin: 0;
@@ -146,7 +150,7 @@ body::before {
 }
 
 .navbar nav .submenu li a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(var(--navbar-sub-hover), 0.1);
 }
 
 /* ——— MOBILE FIXES ——— */
@@ -182,7 +186,7 @@ body::before {
     position: static;
     transform: none;
     flex-direction: column;
-    background: rgba(51, 51, 51, 0.9);
+    background: rgba(var(--navbar-sub-default), 0.9);
     padding: 0;
     gap: 0;
     white-space: normal;
